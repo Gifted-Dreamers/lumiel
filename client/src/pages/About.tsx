@@ -261,11 +261,10 @@ export default function About() {
               </div>
               <div className="p-6 flex-1">
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Kristine is the Executive Director and Founder of Gifted Dreamers, Inc., the 501(c)(3) nonprofit that serves as fiscal sponsor for The Common Cloud. She is also an accounting consultant at Socall C Group LLC.
+                  Kristine is the Executive Director and Founder of Gifted Dreamers, Inc., the 501(c)(3) nonprofit that serves as a fiscal sponsor for Lumiel Design Clarity. She is also the Founder of Socall C Group LLC.
                 </p>
                 <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  Gifted Dreamers deploys community infrastructure empowering neighbors to connect, coordinate support, and strengthen resilience before, during, and after crises — currently partnering with communities in Travis County, Texas responding to catastrophic flooding.
-                </p>
+                  Gifted Dreamers’ mission is to democratize access to technology and AI by deploying infrastructure for community-led resilience that empowers people to connect, coordinate support, and strengthen resilience before, during, and after crises.                </p>
                 <div className="flex flex-wrap gap-2">
                   {["Nonprofit Leadership", "Community Resilience", "Fiscal Sponsorship", "Accounting", "Civic Infrastructure"].map((tag) => (
                     <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
