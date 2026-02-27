@@ -103,7 +103,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Where can I find the source code?",
-        a: "The project is hosted on GitHub. As we are in early development, the repository is being set up. Check our website for the latest link to the GitHub repository.",
+        a: "The source code will be publicly available once the repository is ready. We are currently in early development. Sign up via our Contact page to be notified when the repository launches.",
       },
     ],
   },

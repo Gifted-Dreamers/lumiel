@@ -4,7 +4,7 @@
  * Uses official high-res Lumiel logo
  */
 import { Link } from "wouter";
-import { Github, Linkedin, ExternalLink, Heart } from "lucide-react";
+import { Linkedin, ExternalLink, Heart } from "lucide-react";
 
 // Official high-res Lumiel logo
 const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png";
@@ -55,15 +55,6 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={18} />
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 text-slate-500 hover:text-[oklch(0.72_0.15_210)] transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={18} />
               </a>
             </div>
           </div>

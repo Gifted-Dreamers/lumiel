@@ -5,7 +5,7 @@
  */
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Github } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -85,15 +85,6 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-2 p-2 text-slate-400 hover:text-[oklch(0.72_0.15_210)] transition-colors"
-              aria-label="GitHub"
-            >
-              <Github size={18} />
-            </a>
             <Link
               href="/contact"
               className="ml-2 px-4 py-2 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-sm font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors"

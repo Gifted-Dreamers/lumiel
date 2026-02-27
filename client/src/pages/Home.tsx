@@ -4,7 +4,7 @@
  * Sections: Hero, About, Platform Features, Open Source, CTA
  */
 import { Link } from "wouter";
-import { ArrowRight, CheckCircle, Github, ExternalLink, Users, BarChart3, Brain, Shield } from "lucide-react";
+import { ArrowRight, CheckCircle, ExternalLink, Users, BarChart3, Brain, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -109,15 +109,6 @@ export default function Home() {
                 >
                   Learn More
                 </Link>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 border border-[oklch(0.72_0.15_210/0.5)] text-[oklch(0.72_0.15_210)] font-medium rounded hover:bg-[oklch(0.72_0.15_210/0.1)] transition-colors"
-                >
-                  <Github size={16} />
-                  View on GitHub
-                </a>
               </div>
             </div>
 
@@ -295,15 +286,6 @@ export default function Home() {
                 ))}
               </div>
               <div className="flex gap-4">
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-sm font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors"
-                >
-                  <Github size={16} />
-                  GitHub Repository
-                </a>
                 <a
                   href="https://gifteddreamers.org"
                   target="_blank"
