@@ -256,7 +256,7 @@ export default function Home() {
                 Built in the Open,<br />For the Public Good
               </h2>
               <p className="text-slate-300 leading-relaxed mb-6 font-serif">
-                Lumiel Design Clarity is released under the MIT License — free to use, modify, and distribute. The Common Cloud is our open-source flagship project. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.
+                Lumiel Design Clarity is released under the MIT License — free to use, modify, and distribute. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[
