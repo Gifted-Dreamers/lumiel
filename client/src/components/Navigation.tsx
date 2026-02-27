@@ -65,7 +65,7 @@ export default function Navigation() {
                 Lumiel Design Clarity
               </span>
               <span className="text-[oklch(0.72_0.15_210)] text-[10px] font-medium tracking-widest uppercase">
-                The Common Cloud
+                A Common Cloud Project
               </span>
             </div>
           </Link>
