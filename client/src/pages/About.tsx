@@ -40,7 +40,7 @@ export default function About() {
             <div>
               <div className="accent-bar mb-4" />
               <h2 className="text-3xl font-bold text-[oklch(0.18_0.04_245)] mb-6 tracking-tight">Our Mission</h2>
-              <p className="text-lg text-slate-600 leading-relaxed mb-5 font-serif">
+              <p className="text-base text-slate-600 leading-relaxed mb-5">
                 We are building an open-source civic technology platform that combines structured analytical methods with conversational AI. The platform uses evidence grading, probabilistic reasoning, and causal inference to help users navigate complex, high-stakes decisions with greater transparency and confidence.
               </p>
               <p className="text-base text-slate-600 leading-relaxed mb-5">
@@ -68,7 +68,7 @@ export default function About() {
           <img
             src={LUMIEL_BANNER}
             alt="Lumiel Design Clarity — Illuminate information. Empower decisions."
-            className="w-full h-48 md:h-64 object-cover"
+            className="w-full h-48 md:h-64 object-contain bg-navy"
             loading="lazy"
           />
         </div>
@@ -186,10 +186,10 @@ export default function About() {
               <h2 className="text-3xl font-bold text-[oklch(0.18_0.04_245)] mb-5 tracking-tight">
                 Join Our Growing Community
               </h2>
-              <p className="text-slate-600 leading-relaxed mb-5 font-serif">
+              <p className="text-base text-slate-600 leading-relaxed mb-5">
                 The Common Cloud is a community-driven project. We are actively building a team of volunteer contributors who share our commitment to making decision intelligence accessible to all.
               </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-base text-slate-600 leading-relaxed mb-6">
                 Whether you are a developer, data scientist, designer, or domain expert in decision science, there is a meaningful role for you in this project.
               </p>
               <a
@@ -227,7 +227,7 @@ export default function About() {
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-5 tracking-tight">
               Fiscally Sponsored by Gifted Dreamers, Inc.
             </h2>
-            <p className="text-slate-300 leading-relaxed mb-6 font-serif">
+            <p className="text-slate-300 text-base leading-relaxed mb-6">
               The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by{" "}
               <a href="https://gifteddreamers.org" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.72_0.15_210)] hover:underline">
                 Gifted Dreamers, Inc.
