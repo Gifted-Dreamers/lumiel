@@ -73,38 +73,62 @@ const SKILLS = [
 ];
 
 // ── GiveButter Donate Widget ─────────────────────────────────────────────────
+// Uses GiveButter's hosted donation page via an iframe embed.
+// Campaign slug must be set in your GiveButter account at givebutter.com.
+// The account ID PWF9tXFflbTG12rU belongs to Gifted Dreamers.
 function GiveButterWidget() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    // Prevent double-loading
-    if (document.querySelector('script[src*="js.givebutter.com"]')) return;
+    // Load GiveButter elements script for the custom element to work
+    const existingScript = document.querySelector('script[src*="js.givebutter.com/elements"]');
+    if (!existingScript) {
+      const w = window as Window;
+      if (!w.Givebutter) {
+        const gb = ((...args: unknown[]) => {
+          (gb as Window["Givebutter"] & { q: unknown[] }).q = (gb as Window["Givebutter"] & { q: unknown[] }).q || [];
+          (gb as Window["Givebutter"] & { q: unknown[] }).q.push(args);
+        }) as Window["Givebutter"];
+        w.Givebutter = gb;
+      }
+      w.Givebutter!("setOptions", { accountId: "PWF9tXFflbTG12rU" });
 
-    const w = window;
-    if (!w.Givebutter) {
-      const gb: Window["Givebutter"] = (...args: unknown[]) => {
-        gb!.q = gb!.q || [];
-        gb!.q!.push(args);
-      };
-      w.Givebutter = gb;
+      const s1 = document.createElement("script");
+      s1.async = true;
+      s1.src = "https://js.givebutter.com/elements/latest.js";
+      s1.onload = () => setLoaded(true);
+      document.body.appendChild(s1);
+
+      const s2 = document.createElement("script");
+      s2.async = true;
+      s2.src = "https://widgets.givebutter.com/latest.umd.cjs?acct=PWF9tXFflbTG12rU&p=other";
+      document.body.appendChild(s2);
+    } else {
+      setLoaded(true);
     }
-    w.Givebutter!("setOptions", { accountId: "PWF9tXFflbTG12rU" });
-
-    const s1 = document.createElement("script");
-    s1.async = true;
-    s1.src = "https://js.givebutter.com/elements/latest.js";
-    document.body.appendChild(s1);
-
-    const s2 = document.createElement("script");
-    s2.async = true;
-    s2.src = "https://widgets.givebutter.com/latest.umd.cjs?acct=PWF9tXFflbTG12rU&p=other";
-    document.body.appendChild(s2);
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full min-h-[180px]">
+    <div ref={containerRef} className="w-full">
+      {/* GiveButter hosted campaign widget - campaign slug must match your GiveButter campaign */}
       {/* @ts-ignore */}
-      <givebutter-widget id="gifteddreamers" />
+      <givebutter-widget id="gifteddreamers"></givebutter-widget>
+      {/* Fallback donate button if widget doesn't render */}
+      <div className={`mt-4 text-center ${loaded ? '' : ''}`}>
+        <a
+          href="https://givebutter.com/gifteddreamers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-8 py-3.5 bg-[oklch(0.72_0.15_210)] hover:bg-[oklch(0.65_0.15_210)] text-[oklch(0.12_0.04_245)] font-bold rounded-lg transition-colors text-base shadow-md"
+        >
+          <Heart size={18} />
+          Donate via GiveButter
+        </a>
+        <p className="text-xs text-slate-500 mt-2">
+          Secure donation processing by GiveButter. Tax-deductible through Gifted Dreamers, Inc. 501(c)(3).
+        </p>
+      </div>
     </div>
   );
 }
