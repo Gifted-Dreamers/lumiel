@@ -230,7 +230,7 @@ export default function About() {
                     Daniele is a data science professional with a strong foundation in statistics and deep expertise in machine learning algorithms, including deep learning and AI. He leverages data to tackle complex challenges and deliver impactful, data-driven solutions across the full data science lifecycle — from concept development to model deployment.
                   </p>
                   <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                    With extensive experience communicating technical concepts to diverse audiences and thriving in agile, cross-functional teams, Daniele brings both rigorous analytical depth and practical implementation expertise to The Common Cloud's decision-support infrastructure.
+                    With extensive experience communicating technical concepts to diverse audiences and thriving in agile, cross-functional teams, Daniele brings both rigorous analytical depth and practical implementation expertise to Lumiel Design Clarity decision-support infrastructure.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {["Machine Learning", "Deep Learning", "Statistics", "Data Science", "AI"].map((tag) => (
