@@ -1,7 +1,7 @@
 /*
  * About Us Page — The Common Cloud
  * Design: Precision Civic Tech — Navy/Teal editorial layout
- * Content: Katherine Hardin profile, mission, team, fiscal sponsor
+ * Content: Katherine Hardin profile, Technical Advisors, mission, fiscal sponsor
  */
 import { Linkedin, ExternalLink, MapPin, Briefcase, GraduationCap } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -107,7 +107,7 @@ export default function About() {
           </div>
 
           {/* Katherine Hardin — Founder */}
-          <div className="max-w-4xl mx-auto mb-10">
+          <div className="max-w-4xl mx-auto mb-14">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100">
               <div className="bg-navy p-8 md:p-10">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -188,94 +188,62 @@ export default function About() {
             </div>
           </div>
 
-          {/* Eric Basham + Kristine Socall — two-column cards */}
-          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Technical Advisors */}
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="accent-bar mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-[oklch(0.18_0.04_245)] mb-2 tracking-tight">Technical Advisors</h3>
+              <p className="text-slate-500 max-w-xl mx-auto font-serif text-sm">
+                Researchers and practitioners who bring deep expertise in data science and machine learning to guide the platform's development.
+              </p>
+            </div>
 
-            {/* Eric Basham */}
-            <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
-              <div className="bg-navy p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">EB</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-xl font-bold text-white mb-0.5">Eric Basham</h3>
-                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Neuromorphic Engineer &amp; AI/ML Hardware Specialist</p>
-                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
-                      <span className="flex items-center gap-1"><MapPin size={11} />Seattle, Washington</span>
+            <div className="max-w-xl mx-auto">
+              {/* Daniele Didino */}
+              <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                <div className="bg-navy p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                      <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">DD</span>
                     </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-xl font-bold text-white mb-0.5">Daniele Didino</h4>
+                      <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Data Scientist &amp; ML Engineer</p>
+                      <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                        <span className="flex items-center gap-1"><MapPin size={11} />Berlin, Germany</span>
+                        <span className="flex items-center gap-1"><Briefcase size={11} />Herzum</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/daniele-didino"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                    >
+                      <Linkedin size={12} />
+                      LinkedIn
+                    </a>
                   </div>
-                  <a
-                    href="https://www.linkedin.com/in/eric-basham-0580b02/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
-                  >
-                    <Linkedin size={12} />
-                    LinkedIn
-                  </a>
                 </div>
-              </div>
-              <div className="p-6 flex-1">
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Eric is a neuromorphic engineer specializing in device, analog, AMS, and MEMs design for IC and PCB systems. He brings deep expertise in AI/ML holistic hardware solutions and has led open-source research programs and student teams to national recognition.
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  His career spans the full hardware development lifecycle — from custom process and device design to fabrication, metrology, and analog/mixed-signal circuit implementation — alongside software fluency in Python, MATLAB, C, and Verilog.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Neuromorphic Engineering", "AI/ML Hardware", "Open Source", "Python", "Circuit Design"].map((tag) => (
-                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
-                      {tag}
-                    </span>
-                  ))}
+                <div className="p-6 flex-1">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Daniele is a data science professional with a strong foundation in statistics and deep expertise in machine learning algorithms, including deep learning and AI. He leverages data to tackle complex challenges and deliver impactful, data-driven solutions across the full data science lifecycle — from concept development to model deployment.
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                    With extensive experience communicating technical concepts to diverse audiences and thriving in agile, cross-functional teams, Daniele brings both rigorous analytical depth and practical implementation expertise to The Common Cloud's decision-support infrastructure.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Machine Learning", "Deep Learning", "Statistics", "Data Science", "AI"].map((tag) => (
+                      <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-
-            {/* Kristine Socall */}
-            <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
-              <div className="bg-navy p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">KS</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-xl font-bold text-white mb-0.5">Kristine Socall, MBA</h3>
-                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Executive Director &amp; Founder, Gifted Dreamers, Inc.</p>
-                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
-                      <span className="flex items-center gap-1"><MapPin size={11} />Austin, Texas</span>
-                      <span className="flex items-center gap-1"><Briefcase size={11} />Gifted Dreamers 501(c)(3)</span>
-                    </div>
-                  </div>
-                  <a
-                    href="https://www.linkedin.com/in/kristinesocall/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
-                  >
-                    <Linkedin size={12} />
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-              <div className="p-6 flex-1">
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Kristine is the Executive Director and Founder of Gifted Dreamers, Inc., the 501(c)(3) nonprofit that serves as a fiscal sponsor for Lumiel Design Clarity. She is also the Founder of Socall C Group LLC.
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  Gifted Dreamers’ mission is to democratize access to technology and AI by deploying infrastructure for community-led resilience that empowers people to connect, coordinate support, and strengthen resilience before, during, and after crises.                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Nonprofit Leadership", "Community Resilience", "Fiscal Sponsorship", "Accounting", "Civic Infrastructure"].map((tag) => (
-                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
           </div>
+
         </div>
       </section>
 
@@ -310,67 +278,6 @@ export default function About() {
                 loading="lazy"
               />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Technical Advisors Section — Daniele Didino only */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <div className="accent-bar mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-[oklch(0.18_0.04_245)] mb-3 tracking-tight">Technical Advisors</h2>
-            <p className="text-slate-500 max-w-xl mx-auto font-serif">
-              Researchers and practitioners who bring deep expertise in data science, cognitive psychology, and evidence-based decision-making to guide the platform's development.
-            </p>
-          </div>
-
-          <div className="max-w-xl mx-auto">
-
-            {/* Daniele Didino */}
-            <div className="bg-[oklch(0.97_0.005_245)] rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
-              <div className="bg-navy p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">DD</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-xl font-bold text-white mb-0.5">Daniele Didino</h3>
-                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Data Scientist &amp; ML Engineer</p>
-                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
-                      <span className="flex items-center gap-1"><MapPin size={11} />Berlin, Germany</span>
-                      <span className="flex items-center gap-1"><Briefcase size={11} />Herzum</span>
-                    </div>
-                  </div>
-                  <a
-                    href="https://www.linkedin.com/in/daniele-didino"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
-                  >
-                    <Linkedin size={12} />
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-              <div className="p-6 flex-1">
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Daniele is a data science professional with a strong foundation in statistics and deep expertise in machine learning algorithms, including deep learning and AI. He leverages data to tackle complex challenges and deliver impactful, data-driven solutions across the full data science lifecycle — from concept development to model deployment.
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  With extensive experience communicating technical concepts to diverse audiences and thriving in agile, cross-functional teams, Daniele brings both rigorous analytical depth and practical implementation expertise to The Common Cloud's decision-support infrastructure.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Machine Learning", "Deep Learning", "Statistics", "Data Science", "AI"].map((tag) => (
-                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-
           </div>
         </div>
       </section>
