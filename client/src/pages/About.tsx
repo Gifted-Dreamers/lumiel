@@ -326,7 +326,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="max-w-xl mx-auto">
 
             {/* Daniele Didino */}
             <div className="bg-[oklch(0.97_0.005_245)] rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
