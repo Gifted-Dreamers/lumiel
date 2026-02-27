@@ -112,20 +112,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right: Lumiel logo */}
-            <div className="hidden lg:flex flex-col items-center justify-center flex-shrink-0">
-              <div className="w-64 h-64 xl:w-80 xl:h-80 rounded-2xl overflow-hidden bg-white shadow-2xl shadow-black/40 flex items-center justify-center p-4">
-                <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png"
-                  alt="Lumiel Design Clarity"
-                  className="w-full h-full object-contain"
-                  loading="eager"
-                />
-              </div>
-              <p className="text-[oklch(0.72_0.15_210)] text-xs font-medium tracking-widest uppercase mt-4 opacity-80">
-                Lumiel Design Clarity
-              </p>
-            </div>
           </div>
         </div>
 
