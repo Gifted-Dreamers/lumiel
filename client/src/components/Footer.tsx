@@ -100,7 +100,7 @@ export default function Footer() {
               Austin, TX
             </p>
             <p className="text-xs leading-relaxed">
-              The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by{" "}
+              Lumiel Design Clarity is fiscally sponsored by{" "}
               <a
                 href="https://gifteddreamers.org"
                 target="_blank"

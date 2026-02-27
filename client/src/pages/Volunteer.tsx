@@ -545,7 +545,7 @@ export default function Volunteer() {
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-slate-300 text-sm leading-relaxed">
-              The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by{" "}
+              Lumiel Design Clarity is fiscally sponsored by{" "}
               <a href="https://gifteddreamers.org" target="_blank" rel="noopener noreferrer"
                 className="text-[oklch(0.72_0.15_210)] hover:underline">
                 Gifted Dreamers, Inc.

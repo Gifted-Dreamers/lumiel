@@ -298,7 +298,7 @@ export default function About() {
               Fiscally Sponsored by Gifted Dreamers, Inc.
             </h2>
             <p className="text-slate-300 text-base leading-relaxed mb-6">
-              The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by{" "}
+              Lumiel Design Clarity is fiscally sponsored by{" "}
               <a href="https://gifteddreamers.org" target="_blank" rel="noopener noreferrer" className="text-[oklch(0.72_0.15_210)] hover:underline">
                 Gifted Dreamers, Inc.
               </a>

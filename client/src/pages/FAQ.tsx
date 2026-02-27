@@ -62,7 +62,7 @@ const FAQ_CATEGORIES = [
     questions: [
       {
         q: "Is my donation tax-deductible?",
-        a: "Yes. The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by Gifted Dreamers, Inc., a 501(c)(3) nonprofit organization (EIN: 39-3863796). Lumiel Design Clarity is the organization behind The Common Cloud. Donations are tax-deductible to the extent permitted by law. You will receive a tax receipt for your donation.",
+        a: "Yes. Lumiel Design Clarity is fiscally sponsored by Gifted Dreamers, Inc., a 501(c)(3) nonprofit organization (EIN: 39-3863796). Donations are tax-deductible to the extent permitted by law. You will receive a tax receipt for your donation.",
       },
       {
         q: "Who is Gifted Dreamers, Inc.?",
