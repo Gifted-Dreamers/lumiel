@@ -73,7 +73,7 @@ export default function Home() {
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
                   </svg>
-                  Open Source · MIT License
+                  Lumiel Design Clarity · MIT License
                 </span>
                 <span className="text-slate-400 text-xs">Fiscally sponsored by Gifted Dreamers, Inc. 501(c)(3)</span>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -left-6 bg-[oklch(0.18_0.04_245)] text-white p-4 rounded-xl shadow-xl border border-[oklch(0.72_0.15_210/0.3)]">
                 <div className="text-2xl font-bold text-[oklch(0.72_0.15_210)]">MIT</div>
-                <div className="text-xs text-slate-400 mt-0.5">Open Source License</div>
+                <div className="text-xs text-slate-400 mt-0.5">Lumiel Design Clarity</div>
               </div>
             </div>
           </div>
@@ -256,7 +256,7 @@ export default function Home() {
                 Built in the Open,<br />For the Public Good
               </h2>
               <p className="text-slate-300 leading-relaxed mb-6 font-serif">
-                The Common Cloud is released under the MIT License — free to use, modify, and distribute. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.
+                Lumiel Design Clarity is released under the MIT License — free to use, modify, and distribute. The Common Cloud is our open-source flagship project. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-8">
                 {[

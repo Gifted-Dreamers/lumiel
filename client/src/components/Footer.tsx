@@ -26,14 +26,14 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <div className="text-white font-semibold text-sm">The Common Cloud</div>
+                <div className="text-white font-semibold text-sm">Lumiel Design Clarity</div>
                 <div className="text-[oklch(0.72_0.15_210)] text-[10px] font-medium tracking-widest uppercase">
-                  by Lumiel Design Clarity
+                  The Common Cloud
                 </div>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
-              Making institutional-grade decision support tools accessible to everyone through open-source civic technology.
+              Lumiel Design Clarity builds open-source civic technology. The Common Cloud is our flagship project — making institutional-grade decision support accessible to everyone.
             </p>
             {/* Badges */}
             <div className="flex flex-wrap gap-2 mb-4">
@@ -100,7 +100,7 @@ export default function Footer() {
               Austin, TX
             </p>
             <p className="text-xs leading-relaxed">
-              This project is fiscally sponsored by{" "}
+              The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by{" "}
               <a
                 href="https://gifteddreamers.org"
                 target="_blank"

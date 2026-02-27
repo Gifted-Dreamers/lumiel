@@ -85,7 +85,7 @@ export default function Contact() {
               <div className="accent-bar mb-4" />
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Contact Us</h1>
               <p className="text-xl text-slate-300 max-w-2xl font-serif">
-                Reach out to learn more, volunteer, or support The Common Cloud project.
+                Reach out to learn more, volunteer, or support Lumiel Design Clarity and The Common Cloud project.
               </p>
             </div>
             {/* Lumiel logo - right side of header */}
@@ -161,8 +161,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-xs font-semibold text-[oklch(0.18_0.04_245)] uppercase tracking-wider mb-1">Project</div>
-                    <div className="text-slate-600 text-sm">thecommoncloud.org</div>
-                    <div className="text-slate-500 text-xs mt-0.5">by Lumiel Design Clarity</div>
+                    <div className="text-slate-600 text-sm">Lumiel Design Clarity</div>
+                    <div className="text-slate-500 text-xs mt-0.5">thecommoncloud.org</div>
                   </div>
                 </div>
               </div>
@@ -345,7 +345,7 @@ export default function Contact() {
                     </button>
 
                     <p className="text-xs text-slate-400 text-center">
-                      By submitting this form, you agree to be contacted about The Common Cloud project.
+                      By submitting this form, you agree to be contacted about Lumiel Design Clarity and The Common Cloud project.
                       We respect your privacy and will not share your information.
                     </p>
                   </form>

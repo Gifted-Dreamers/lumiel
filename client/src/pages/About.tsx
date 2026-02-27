@@ -30,7 +30,7 @@ export default function About() {
               <div className="accent-bar mb-4" />
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">About Us</h1>
               <p className="text-xl text-slate-300 max-w-2xl font-serif">
-                Meet the team behind The Common Cloud and learn about our mission to democratize decision intelligence.
+                Meet the team behind Lumiel Design Clarity and learn about our mission to democratize decision intelligence.
               </p>
             </div>
             {/* Lumiel logo - right side of header */}
@@ -106,27 +106,20 @@ export default function About() {
             </p>
           </div>
 
-          {/* Katherine Hardin Profile */}
-          <div className="max-w-4xl mx-auto">
+          {/* Katherine Hardin — Founder */}
+          <div className="max-w-4xl mx-auto mb-10">
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-100">
               <div className="bg-navy p-8 md:p-10">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                  {/* Avatar placeholder with initials */}
                   <div className="w-20 h-20 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
                     <span className="text-[oklch(0.72_0.15_210)] text-2xl font-bold">KH</span>
                   </div>
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white mb-1">Katherine Hardin</h3>
-                    <p className="text-[oklch(0.72_0.15_210)] font-medium mb-2">Founder & Lead, Lumiel Design Clarity</p>
+                    <p className="text-[oklch(0.72_0.15_210)] font-medium mb-2">Founder, Lumiel Design Clarity · Lead, The Common Cloud</p>
                     <div className="flex flex-wrap gap-3 text-sm text-slate-400">
-                      <span className="flex items-center gap-1">
-                        <MapPin size={13} />
-                        Austin, Texas
-                      </span>
-                      <span className="flex items-center gap-1">
-                        <Briefcase size={13} />
-                        Civic Technology · Decision Science
-                      </span>
+                      <span className="flex items-center gap-1"><MapPin size={13} />Austin, Texas</span>
+                      <span className="flex items-center gap-1"><Briefcase size={13} />Civic Technology · Decision Science</span>
                     </div>
                   </div>
                   <a
@@ -140,7 +133,6 @@ export default function About() {
                   </a>
                 </div>
               </div>
-
               <div className="p-8 md:p-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
@@ -149,7 +141,7 @@ export default function About() {
                       Background
                     </h4>
                     <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                      Katherine Hardin is the founder of Lumiel Design Clarity and the driving force behind The Common Cloud project. With a background spanning civic technology, decision science, and organizational strategy, she brings a unique perspective to the challenge of making rigorous analytical tools accessible to everyone.
+                      Katherine Hardin is the founder of Lumiel Design Clarity, the organization behind The Common Cloud project. With a background spanning civic technology, decision science, and organizational strategy, she brings a unique perspective to the challenge of making rigorous analytical tools accessible to everyone.
                     </p>
                     <p className="text-slate-600 text-sm leading-relaxed">
                       Her work is motivated by a core belief: that the quality of decisions made by individuals, nonprofits, and small organizations should not be limited by their access to sophisticated analytical infrastructure.
@@ -195,6 +187,96 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          {/* Eric Basham + Kristine Socall — two-column cards */}
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {/* Eric Basham */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+              <div className="bg-navy p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">EB</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-white mb-0.5">Eric Basham</h3>
+                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Neuromorphic Engineer &amp; AI/ML Hardware Specialist</p>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                      <span className="flex items-center gap-1"><MapPin size={11} />Seattle, Washington</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/eric-basham-0580b02/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                  >
+                    <Linkedin size={12} />
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+              <div className="p-6 flex-1">
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                  Eric is a neuromorphic engineer specializing in device, analog, AMS, and MEMs design for IC and PCB systems. He brings deep expertise in AI/ML holistic hardware solutions and has led open-source research programs and student teams to national recognition.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                  His career spans the full hardware development lifecycle — from custom process and device design to fabrication, metrology, and analog/mixed-signal circuit implementation — alongside software fluency in Python, MATLAB, C, and Verilog.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Neuromorphic Engineering", "AI/ML Hardware", "Open Source", "Python", "Circuit Design"].map((tag) => (
+                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Kristine Socall */}
+            <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+              <div className="bg-navy p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">KS</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-white mb-0.5">Kristine Socall, MBA</h3>
+                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Executive Director &amp; Founder, Gifted Dreamers, Inc.</p>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                      <span className="flex items-center gap-1"><MapPin size={11} />Austin, Texas</span>
+                      <span className="flex items-center gap-1"><Briefcase size={11} />Gifted Dreamers 501(c)(3)</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/kristinesocall/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                  >
+                    <Linkedin size={12} />
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+              <div className="p-6 flex-1">
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                  Kristine is the Executive Director and Founder of Gifted Dreamers, Inc., the 501(c)(3) nonprofit that serves as fiscal sponsor for The Common Cloud. She is also an accounting consultant at Socall C Group LLC.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                  Gifted Dreamers deploys community infrastructure empowering neighbors to connect, coordinate support, and strengthen resilience before, during, and after crises — currently partnering with communities in Travis County, Texas responding to catastrophic flooding.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Nonprofit Leadership", "Community Resilience", "Fiscal Sponsorship", "Accounting", "Civic Infrastructure"].map((tag) => (
+                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -208,7 +290,7 @@ export default function About() {
                 Join Our Growing Community
               </h2>
               <p className="text-base text-slate-600 leading-relaxed mb-5">
-                The Common Cloud is a community-driven project. We are actively building a team of volunteer contributors who share our commitment to making decision intelligence accessible to all.
+                Lumiel Design Clarity is a community-driven organization. We are actively building a team of volunteer contributors who share our commitment to making decision intelligence accessible to all.
               </p>
               <p className="text-base text-slate-600 leading-relaxed mb-6">
                 Whether you are a developer, data scientist, designer, or domain expert in decision science, there is a meaningful role for you in this project.
@@ -233,7 +315,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Technical Advisors Section */}
+      {/* Technical Advisors Section — Daniele Didino only */}
       <section className="py-16 bg-white">
         <div className="container">
           <div className="text-center mb-12">
@@ -289,48 +371,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* Emlen Metz */}
-            <div className="bg-[oklch(0.97_0.005_245)] rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
-              <div className="bg-navy p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
-                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">EM</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-xl font-bold text-white mb-0.5">Emlen Metz</h3>
-                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Postdoctoral Researcher, UC Berkeley Physics</p>
-                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
-                      <span className="flex items-center gap-1"><MapPin size={11} />Berkeley, California</span>
-                      <span className="flex items-center gap-1"><GraduationCap size={11} />UC Berkeley · Saul Perlmutter Lab</span>
-                    </div>
-                  </div>
-                  <a
-                    href="https://physics.berkeley.edu/people/post-doc/emlen-metz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
-                  >
-                    <ExternalLink size={12} />
-                    Profile
-                  </a>
-                </div>
-              </div>
-              <div className="p-6 flex-1">
-                <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                  Emlen is a psychologist working within the UC Berkeley Physics department, collaborating with Nobel Laureate Saul Perlmutter on educational research and curriculum development. Her work focuses on ideas from science that are especially powerful for decision-making — and on making those ideas accessible to undergraduates and high school students alike.
-                </p>
-                <p className="text-slate-600 text-sm leading-relaxed mb-5">
-                  Emlen holds a BA from Swarthmore College and a PhD from the University of Pennsylvania. Her research aims to scaffold more reasoned discourse at the intersection of science and society — a mission that closely aligns with The Common Cloud's goals for civic decision intelligence.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Decision Science", "Educational Research", "Cognitive Psychology", "Science Communication", "Curriculum Design"].map((tag) => (
-                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
 
           </div>
         </div>

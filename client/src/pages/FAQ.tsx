@@ -16,7 +16,7 @@ const FAQ_CATEGORIES = [
     questions: [
       {
         q: "What is The Common Cloud?",
-        a: "The Common Cloud is an open-source civic technology platform being developed by Lumiel Design Clarity. It combines structured analytical methods — including evidence grading, probabilistic reasoning, and causal inference — with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
+        a: "The Common Cloud is an open-source civic technology project developed by Lumiel Design Clarity. It combines structured analytical methods — including evidence grading, probabilistic reasoning, and causal inference — with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
       },
       {
         q: "Who is this platform for?",
@@ -28,7 +28,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Is The Common Cloud free to use?",
-        a: "Yes. The Common Cloud is released under the MIT License and will be free and open source. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.",
+        a: "Yes. Lumiel Design Clarity is released under the MIT License. The Common Cloud, as a project of Lumiel Design Clarity, is free and open source. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.",
       },
       {
         q: "What does 'open source' mean for this project?",
@@ -62,7 +62,7 @@ const FAQ_CATEGORIES = [
     questions: [
       {
         q: "Is my donation tax-deductible?",
-        a: "Yes. The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by Gifted Dreamers, Inc., a 501(c)(3) nonprofit organization (EIN: 39-3863796). Donations are tax-deductible to the extent permitted by law. You will receive a tax receipt for your donation.",
+        a: "Yes. The Common Cloud is a project of Lumiel Design Clarity, fiscally sponsored by Gifted Dreamers, Inc., a 501(c)(3) nonprofit organization (EIN: 39-3863796). Lumiel Design Clarity is the organization behind The Common Cloud. Donations are tax-deductible to the extent permitted by law. You will receive a tax receipt for your donation.",
       },
       {
         q: "Who is Gifted Dreamers, Inc.?",
@@ -157,7 +157,7 @@ export default function FAQ() {
                 Frequently Asked Questions
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl font-serif">
-                Answers to common questions about The Common Cloud, volunteering, and donations.
+                Answers to common questions about Lumiel Design Clarity, The Common Cloud project, volunteering, and donations.
               </p>
             </div>
             {/* Lumiel logo - right side of header */}
