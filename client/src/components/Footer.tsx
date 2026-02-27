@@ -33,7 +33,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">
-              Lumiel Design Clarity builds open-source civic technology. The Common Cloud is our flagship project — making institutional-grade decision support accessible to everyone.
+              Lumiel Design Clarity builds open-source civic technology — making institutional-grade decision support accessible to everyone.
             </p>
             {/* Badges */}
             <div className="flex flex-wrap gap-2 mb-4">
