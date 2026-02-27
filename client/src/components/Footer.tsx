@@ -17,12 +17,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <img
-                src={LOGO_URL}
-                alt="Lumiel Design Clarity"
-                className="w-9 h-9 object-contain object-top"
-                loading="lazy"
-              />
+              <div className="w-10 h-10 rounded-lg overflow-hidden bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                <img
+                  src={LOGO_URL}
+                  alt="Lumiel Design Clarity"
+                  className="w-9 h-9 object-contain"
+                  loading="lazy"
+                />
+              </div>
               <div>
                 <div className="text-white font-semibold text-sm">The Common Cloud</div>
                 <div className="text-[oklch(0.72_0.15_210)] text-[10px] font-medium tracking-widest uppercase">

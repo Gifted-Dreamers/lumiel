@@ -25,11 +25,26 @@ export default function About() {
           }}
         />
         <div className="container relative z-10">
-          <div className="accent-bar mb-4" />
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">About Us</h1>
-          <p className="text-xl text-slate-300 max-w-2xl font-serif">
-            Meet the team behind The Common Cloud and learn about our mission to democratize decision intelligence.
-          </p>
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div>
+              <div className="accent-bar mb-4" />
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">About Us</h1>
+              <p className="text-xl text-slate-300 max-w-2xl font-serif">
+                Meet the team behind The Common Cloud and learn about our mission to democratize decision intelligence.
+              </p>
+            </div>
+            {/* Lumiel logo - right side of header */}
+            <div className="hidden md:flex flex-col items-center justify-center flex-shrink-0">
+              <div className="w-32 h-32 rounded-xl overflow-hidden bg-white shadow-xl flex items-center justify-center p-2">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png"
+                  alt="Lumiel Design Clarity"
+                  className="w-full h-full object-contain"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -62,17 +77,22 @@ export default function About() {
         </div>
       </section>
 
-      {/* Lumiel Banner */}
-      <section className="py-0 bg-navy">
-        <div className="relative w-full" style={{ background: "oklch(0.14 0.04 245)" }}>
-          <img
-            src={LUMIEL_BANNER}
-            alt="Lumiel Design Clarity — Illuminate information. Empower decisions."
-            className="w-full object-contain"
-            style={{ maxHeight: "320px", display: "block" }}
-            loading="lazy"
-          />
-        </div>
+      {/* Lumiel Banner — full-width, responsive */}
+      <section className="py-0 bg-[oklch(0.14_0.04_245)] w-full overflow-hidden">
+        <img
+          src={LUMIEL_BANNER}
+          alt="Lumiel Design Clarity — Illuminate information. Empower decisions."
+          className="w-full block"
+          style={{
+            display: "block",
+            width: "100%",
+            height: "auto",
+            maxHeight: "480px",
+            objectFit: "cover",
+            objectPosition: "center center",
+          }}
+          loading="lazy"
+        />
       </section>
 
       {/* Founder / Team Section */}

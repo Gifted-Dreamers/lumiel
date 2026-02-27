@@ -52,13 +52,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <img
-              src={LOGO_URL}
-              alt="Lumiel Design Clarity logo"
-              className="w-10 h-10 object-contain object-top"
-              loading="eager"
-              style={{ objectPosition: "center top" }}
-            />
+            <div className="w-10 h-10 rounded-lg overflow-hidden bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <img
+                src={LOGO_URL}
+                alt="Lumiel Design Clarity logo"
+                className="w-9 h-9 object-contain"
+                loading="eager"
+              />
+            </div>
             <div className="flex flex-col leading-none">
               <span className="text-white font-semibold text-sm tracking-tight">
                 The Common Cloud

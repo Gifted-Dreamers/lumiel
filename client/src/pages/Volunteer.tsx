@@ -333,11 +333,26 @@ export default function Volunteer() {
           style={{ backgroundImage: `url(${VOLUNTEER_IMG})` }} />
         <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.85)]" />
         <div className="container relative z-10">
-          <div className="accent-bar mb-4" />
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Volunteer</h1>
-          <p className="text-xl text-slate-300 max-w-2xl font-serif">
-            Join us in building open-source tools that make rigorous decision support accessible to everyone.
-          </p>
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div>
+              <div className="accent-bar mb-4" />
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Volunteer</h1>
+              <p className="text-xl text-slate-300 max-w-2xl font-serif">
+                Join us in building open-source tools that make rigorous decision support accessible to everyone.
+              </p>
+            </div>
+            {/* Lumiel logo - right side of header */}
+            <div className="hidden md:flex flex-col items-center justify-center flex-shrink-0">
+              <div className="w-32 h-32 rounded-xl overflow-hidden bg-white shadow-xl flex items-center justify-center p-2">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png"
+                  alt="Lumiel Design Clarity"
+                  className="w-full h-full object-contain"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

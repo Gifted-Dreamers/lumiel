@@ -64,58 +64,76 @@ export default function Home() {
         />
 
         <div className="container relative z-10 py-20">
-          <div className="max-w-3xl">
-            {/* Badge */}
-            <div className="flex items-center gap-3 mb-6">
-              <span className="oss-badge">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                </svg>
-                Open Source · MIT License
-              </span>
-              <span className="text-slate-400 text-xs">Fiscally sponsored by Gifted Dreamers, Inc. 501(c)(3)</span>
+          <div className="flex flex-col lg:flex-row items-center gap-12">
+            {/* Left: text content */}
+            <div className="flex-1 max-w-2xl">
+              {/* Badge */}
+              <div className="flex items-center gap-3 mb-6">
+                <span className="oss-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  Open Source · MIT License
+                </span>
+                <span className="text-slate-400 text-xs">Fiscally sponsored by Gifted Dreamers, Inc. 501(c)(3)</span>
+              </div>
+
+              {/* Main headline */}
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
+                Open Source{" "}
+                <span className="text-gradient-teal">Decision</span>
+                <br />
+                <span className="text-gradient-teal">Support</span>
+              </h1>
+
+              <p className="text-xl md:text-2xl text-slate-200 font-light leading-relaxed mb-8 font-serif max-w-2xl">
+                Making institutional-grade decision support tools accessible to everyone.
+              </p>
+
+              <p className="text-base text-slate-300 leading-relaxed mb-10 max-w-xl">
+                We are building an open-source civic technology platform that combines structured analytical methods with conversational AI — bringing the tools of intelligence analysts and research institutions to individuals, nonprofits, and small organizations.
+              </p>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/volunteer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors"
+                >
+                  Get Involved
+                  <ArrowRight size={16} />
+                </Link>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-medium rounded hover:bg-white/10 transition-colors"
+                >
+                  Learn More
+                </Link>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 border border-[oklch(0.72_0.15_210/0.5)] text-[oklch(0.72_0.15_210)] font-medium rounded hover:bg-[oklch(0.72_0.15_210/0.1)] transition-colors"
+                >
+                  <Github size={16} />
+                  View on GitHub
+                </a>
+              </div>
             </div>
 
-            {/* Main headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6">
-              Open Source{" "}
-              <span className="text-gradient-teal">Decision</span>
-              <br />
-              <span className="text-gradient-teal">Support</span>
-            </h1>
-
-            <p className="text-xl md:text-2xl text-slate-200 font-light leading-relaxed mb-8 font-serif max-w-2xl">
-              Making institutional-grade decision support tools accessible to everyone.
-            </p>
-
-            <p className="text-base text-slate-300 leading-relaxed mb-10 max-w-xl">
-              We are building an open-source civic technology platform that combines structured analytical methods with conversational AI — bringing the tools of intelligence analysts and research institutions to individuals, nonprofits, and small organizations.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/volunteer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors"
-              >
-                Get Involved
-                <ArrowRight size={16} />
-              </Link>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/30 text-white font-medium rounded hover:bg-white/10 transition-colors"
-              >
-                Learn More
-              </Link>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-[oklch(0.72_0.15_210/0.5)] text-[oklch(0.72_0.15_210)] font-medium rounded hover:bg-[oklch(0.72_0.15_210/0.1)] transition-colors"
-              >
-                <Github size={16} />
-                View on GitHub
-              </a>
+            {/* Right: Lumiel logo */}
+            <div className="hidden lg:flex flex-col items-center justify-center flex-shrink-0">
+              <div className="w-64 h-64 xl:w-80 xl:h-80 rounded-2xl overflow-hidden bg-white shadow-2xl shadow-black/40 flex items-center justify-center p-4">
+                <img
+                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png"
+                  alt="Lumiel Design Clarity"
+                  className="w-full h-full object-contain"
+                  loading="eager"
+                />
+              </div>
+              <p className="text-[oklch(0.72_0.15_210)] text-xs font-medium tracking-widest uppercase mt-4 opacity-80">
+                Lumiel Design Clarity
+              </p>
             </div>
           </div>
         </div>
