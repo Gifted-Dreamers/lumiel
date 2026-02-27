@@ -205,13 +205,15 @@ function VolunteerForm() {
     setStatus("idle");
     setErrorMsg("");
     try {
-      const res = await fetch("https://n8n.cloudpublica.org/webhook/volunteer-form", {
+      const res = await fetch("https://n8n.cloudpublica.org/webhook/lumiel-volunteer", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...form,
-          submittedAt: new Date().toISOString(),
-          source: "thecommoncloud",
+          name: `${form.firstName} ${form.lastName}`.trim(),
+          email: form.email,
+          company: form.company,
+          skills: form.skills,
+          message: form.message,
         }),
       });
       if (!res.ok) throw new Error("Failed");
@@ -305,7 +307,7 @@ function VolunteerForm() {
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1">Tell us about yourself</label>
         <textarea name="message" value={form.message} onChange={handleChange} rows={4}
-          placeholder="What interests you about contributing to The Common Cloud? What would you like to learn or build?"
+          placeholder="What interests you about contributing to Lumiel Design Clarity? What would you like to learn or build?"
           className="w-full rounded-md border border-slate-300 p-2.5 text-sm outline-none focus:border-teal-500 transition-colors resize-y" />
       </div>
 

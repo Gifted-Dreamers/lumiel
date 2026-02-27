@@ -27,9 +27,6 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-white font-semibold text-sm">Lumiel Design Clarity</div>
-                <div className="text-[oklch(0.72_0.15_210)] text-[10px] font-medium tracking-widest uppercase">
-                  A Common Cloud Project
-                </div>
               </div>
             </div>
             <p className="text-sm leading-relaxed mb-4 max-w-xs">

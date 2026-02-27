@@ -12,11 +12,11 @@ const FAQ_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzM
 
 const FAQ_CATEGORIES = [
   {
-    category: "About The Common Cloud",
+    category: "About Lumiel Design Clarity",
     questions: [
       {
-        q: "What is The Common Cloud?",
-        a: "The Common Cloud is an open-source civic technology project developed by Lumiel Design Clarity. It combines structured analytical methods — including evidence grading, probabilistic reasoning, and causal inference — with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
+        q: "What is Lumiel Design Clarity?",
+        a: "Lumiel Design Clarity is an open-source civic technology organization building The Common Cloud — a platform that combines structured analytical methods, including evidence grading, probabilistic reasoning, and causal inference, with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
       },
       {
         q: "Who is this platform for?",
@@ -24,11 +24,11 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "What stage of development is the project in?",
-        a: "The Common Cloud is currently in early development. We are building the foundational architecture and actively seeking volunteer technical contributors. We do not yet have a public beta release, but we are working toward one.",
+        a: "The platform is currently in early development. We are building the foundational architecture and actively seeking volunteer technical contributors. We do not yet have a public beta release, but we are working toward one.",
       },
       {
-        q: "Is The Common Cloud free to use?",
-        a: "Yes. Lumiel Design Clarity is released under the MIT License. The Common Cloud, as a project of Lumiel Design Clarity, is free and open source. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.",
+        q: "Is the platform free to use?",
+        a: "Yes. Lumiel Design Clarity is released under the MIT License — free and open source. We believe that the tools for clear thinking should be a public resource, not a proprietary advantage.",
       },
       {
         q: "What does 'open source' mean for this project?",
@@ -40,7 +40,7 @@ const FAQ_CATEGORIES = [
     category: "Volunteering",
     questions: [
       {
-        q: "How can I volunteer with The Common Cloud?",
+        q: "How can I volunteer with Lumiel Design Clarity?",
         a: "We are actively seeking volunteers with experience in Python backend development, LLM integration and prompt engineering, frontend development (React), and applied statistics or decision science. Visit our Volunteer page to learn more about open roles, or contact us directly through the Contact page.",
       },
       {
@@ -66,7 +66,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Who is Gifted Dreamers, Inc.?",
-        a: "Gifted Dreamers, Inc. is a 501(c)(3) nonprofit organization based in Austin, Texas (EIN: 39-3863796). They serve as the fiscal sponsor for The Common Cloud, which means they provide legal and financial infrastructure for the project while it operates as a fiscally sponsored project rather than an independent nonprofit. Learn more at gifteddreamers.org.",
+        a: "Gifted Dreamers, Inc. is a 501(c)(3) nonprofit organization based in Austin, Texas (EIN: 39-3863796). They serve as the fiscal sponsor for Lumiel Design Clarity, providing legal and financial infrastructure for the organization. Learn more at gifteddreamers.org.",
       },
       {
         q: "What is fiscal sponsorship?",
@@ -157,7 +157,7 @@ export default function FAQ() {
                 Frequently Asked Questions
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl font-serif">
-                Answers to common questions about Lumiel Design Clarity, The Common Cloud project, volunteering, and donations.
+                Answers to common questions about Lumiel Design Clarity, volunteering, and donations.
               </p>
             </div>
             {/* Lumiel logo - right side of header */}

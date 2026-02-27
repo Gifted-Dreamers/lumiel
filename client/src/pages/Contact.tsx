@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 // n8n webhook URL
-const N8N_WEBHOOK_URL = "https://n8n.srv862465.hstgr.cloud/webhook/lumiel-contact";
+const N8N_WEBHOOK_URL = "https://n8n.cloudpublica.org/webhook/lumiel-contact";
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -48,9 +48,11 @@ export default function Contact() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...formData,
-          source: "thecommoncloud.org",
-          timestamp: new Date().toISOString(),
+          name: formData.name,
+          email: formData.email,
+          interest: formData.interest,
+          subject: formData.subject,
+          message: formData.message,
         }),
       });
 
@@ -85,7 +87,7 @@ export default function Contact() {
               <div className="accent-bar mb-4" />
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">Contact Us</h1>
               <p className="text-xl text-slate-300 max-w-2xl font-serif">
-                Reach out to learn more, volunteer, or support Lumiel Design Clarity and The Common Cloud project.
+                Reach out to learn more, volunteer, or support Lumiel Design Clarity.
               </p>
             </div>
             {/* Lumiel logo - right side of header */}
@@ -345,7 +347,7 @@ export default function Contact() {
                     </button>
 
                     <p className="text-xs text-slate-400 text-center">
-                      By submitting this form, you agree to be contacted about Lumiel Design Clarity and The Common Cloud project.
+                      By submitting this form, you agree to be contacted about Lumiel Design Clarity.
                       We respect your privacy and will not share your information.
                     </p>
                   </form>

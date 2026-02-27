@@ -141,7 +141,7 @@ export default function About() {
                       Background
                     </h4>
                     <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                      Katherine Hardin is the founder of Lumiel Design Clarity, part of The Common Cloud project. With a background spanning civic technology, decision science, and organizational strategy, she brings a unique perspective to the challenge of making rigorous analytical tools accessible to everyone.
+                      Katherine Hardin is the founder of Lumiel Design Clarity. With a background spanning civic technology, decision science, and organizational strategy, she brings a unique perspective to the challenge of making rigorous analytical tools accessible to everyone.
                     </p>
                     <p className="text-slate-600 text-sm leading-relaxed">
                       Her work is motivated by a core belief: that the quality of decisions made by individuals, nonprofits, and small organizations should not be limited by their access to sophisticated analytical infrastructure.
