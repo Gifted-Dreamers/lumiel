@@ -8,7 +8,7 @@ import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const FAQ_HERO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/oucFeqZnyexwvBup.jpg";
+const FAQ_HERO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/faq-hero_69316434.webp";
 
 const FAQ_CATEGORIES = [
   {
@@ -145,10 +145,10 @@ export default function FAQ() {
       {/* Page Header */}
       <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${FAQ_HERO})` }}
         />
-        <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.80)]" />
+        <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.65)]" />
         <div className="container relative z-10">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>

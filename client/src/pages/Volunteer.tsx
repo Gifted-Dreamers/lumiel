@@ -29,7 +29,7 @@ declare global {
   }
 }
 
-const VOLUNTEER_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/mKGXBDLKHaOfGvOl.jpg";
+const VOLUNTEER_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/volunteer-hero_730fba60.webp";
 const TEAM_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/tNjQfXaudiylFOde.png";
 
 const VOLUNTEER_ROLES = [
@@ -329,9 +329,9 @@ export default function Volunteer() {
 
       {/* Hero */}
       <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center opacity-20"
+        <div className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${VOLUNTEER_IMG})` }} />
-        <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.85)]" />
+        <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.75)]" />
         <div className="container relative z-10">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
