@@ -233,6 +233,109 @@ export default function About() {
         </div>
       </section>
 
+      {/* Technical Advisors Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <div className="accent-bar mx-auto mb-4" />
+            <h2 className="text-3xl font-bold text-[oklch(0.18_0.04_245)] mb-3 tracking-tight">Technical Advisors</h2>
+            <p className="text-slate-500 max-w-xl mx-auto font-serif">
+              Researchers and practitioners who bring deep expertise in data science, cognitive psychology, and evidence-based decision-making to guide the platform's development.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            {/* Daniele Didino */}
+            <div className="bg-[oklch(0.97_0.005_245)] rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+              <div className="bg-navy p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">DD</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-white mb-0.5">Daniele Didino</h3>
+                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Data Scientist &amp; ML Engineer</p>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                      <span className="flex items-center gap-1"><MapPin size={11} />Berlin, Germany</span>
+                      <span className="flex items-center gap-1"><Briefcase size={11} />Herzum</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/daniele-didino"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                  >
+                    <Linkedin size={12} />
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+              <div className="p-6 flex-1">
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                  Daniele is a data science professional with a strong foundation in statistics and deep expertise in machine learning algorithms, including deep learning and AI. He leverages data to tackle complex challenges and deliver impactful, data-driven solutions across the full data science lifecycle — from concept development to model deployment.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                  With extensive experience communicating technical concepts to diverse audiences and thriving in agile, cross-functional teams, Daniele brings both rigorous analytical depth and practical implementation expertise to The Common Cloud's decision-support infrastructure.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Machine Learning", "Deep Learning", "Statistics", "Data Science", "AI"].map((tag) => (
+                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Emlen Metz */}
+            <div className="bg-[oklch(0.97_0.005_245)] rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+              <div className="bg-navy p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                    <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">EM</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-xl font-bold text-white mb-0.5">Emlen Metz</h3>
+                    <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">Postdoctoral Researcher, UC Berkeley Physics</p>
+                    <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                      <span className="flex items-center gap-1"><MapPin size={11} />Berkeley, California</span>
+                      <span className="flex items-center gap-1"><GraduationCap size={11} />UC Berkeley · Saul Perlmutter Lab</span>
+                    </div>
+                  </div>
+                  <a
+                    href="https://physics.berkeley.edu/people/post-doc/emlen-metz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                  >
+                    <ExternalLink size={12} />
+                    Profile
+                  </a>
+                </div>
+              </div>
+              <div className="p-6 flex-1">
+                <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                  Emlen is a psychologist working within the UC Berkeley Physics department, collaborating with Nobel Laureate Saul Perlmutter on educational research and curriculum development. Her work focuses on ideas from science that are especially powerful for decision-making — and on making those ideas accessible to undergraduates and high school students alike.
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                  Emlen holds a BA from Swarthmore College and a PhD from the University of Pennsylvania. Her research aims to scaffold more reasoned discourse at the intersection of science and society — a mission that closely aligns with The Common Cloud's goals for civic decision intelligence.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {["Decision Science", "Educational Research", "Cognitive Psychology", "Science Communication", "Curriculum Design"].map((tag) => (
+                    <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* Fiscal Sponsor Section */}
       <section className="py-16 bg-navy">
         <div className="container">
