@@ -64,13 +64,54 @@ export default function About() {
 
       {/* Lumiel Banner */}
       <section className="py-0">
-        <div className="relative overflow-hidden">
-          <img
-            src={LUMIEL_BANNER}
-            alt="Lumiel Design Clarity — Illuminate information. Empower decisions."
-            className="w-full h-48 md:h-64 object-contain bg-navy"
-            loading="lazy"
-          />
+        <div
+          className="w-full flex items-center justify-center gap-8 md:gap-16 px-8 py-10 md:py-14"
+          style={{ background: "linear-gradient(135deg, oklch(0.14 0.04 245) 0%, oklch(0.22 0.06 210) 100%)" }}
+        >
+          {/* Logo mark — SVG recreation of Lumiel icon */}
+          <div className="flex-shrink-0 flex items-center justify-center" style={{ width: 120, height: 120 }}>
+            <svg viewBox="0 0 120 130" width="120" height="130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Water droplet outline */}
+              <path d="M60 8 C60 8 28 50 28 72 C28 89.7 42.3 104 60 104 C77.7 104 92 89.7 92 72 C92 50 60 8 60 8Z" stroke="#2DD4BF" strokeWidth="2.5" fill="none"/>
+              {/* Inner flame */}
+              <path d="M60 30 C60 30 46 55 46 68 C46 76.8 52.3 84 60 84 C67.7 84 74 76.8 74 68 C74 55 60 30 60 30Z" fill="#2DD4BF" opacity="0.9"/>
+              {/* Circuit lines left */}
+              <line x1="28" y1="60" x2="10" y2="60" stroke="#2DD4BF" strokeWidth="1.5" opacity="0.7"/>
+              <circle cx="10" cy="60" r="3" fill="#2DD4BF" opacity="0.7"/>
+              <line x1="28" y1="50" x2="14" y2="42" stroke="#2DD4BF" strokeWidth="1.5" opacity="0.5"/>
+              <circle cx="14" cy="42" r="2.5" fill="#2DD4BF" opacity="0.5"/>
+              {/* Circuit lines right */}
+              <line x1="92" y1="60" x2="110" y2="60" stroke="#2DD4BF" strokeWidth="1.5" opacity="0.7"/>
+              <circle cx="110" cy="60" r="3" fill="#2DD4BF" opacity="0.7"/>
+              <line x1="92" y1="50" x2="106" y2="42" stroke="#2DD4BF" strokeWidth="1.5" opacity="0.5"/>
+              <circle cx="106" cy="42" r="2.5" fill="#2DD4BF" opacity="0.5"/>
+              {/* Small floating dots */}
+              <circle cx="22" cy="75" r="3" fill="#2DD4BF" opacity="0.4"/>
+              <circle cx="98" cy="75" r="3" fill="#2DD4BF" opacity="0.4"/>
+              <rect x="108" y="36" width="6" height="6" stroke="#2DD4BF" strokeWidth="1.2" opacity="0.4"/>
+              {/* Butterfly / network base */}
+              <path d="M60 104 L38 118 L60 112 L82 118 Z" stroke="#1E3A5F" strokeWidth="2" fill="#1E3A5F"/>
+              <path d="M60 104 L35 122 L60 115 L85 122 Z" stroke="#2DD4BF" strokeWidth="1.5" fill="none" opacity="0.8"/>
+              <path d="M60 104 L30 126 M60 104 L90 126 M30 126 L90 126" stroke="#2DD4BF" strokeWidth="1.2" opacity="0.6"/>
+              <circle cx="30" cy="126" r="3" fill="#2DD4BF" opacity="0.7"/>
+              <circle cx="90" cy="126" r="3" fill="#2DD4BF" opacity="0.7"/>
+              <circle cx="60" cy="104" r="3" fill="#2DD4BF" opacity="0.9"/>
+              <circle cx="45" cy="118" r="2.5" fill="#2DD4BF" opacity="0.6"/>
+              <circle cx="75" cy="118" r="2.5" fill="#2DD4BF" opacity="0.6"/>
+            </svg>
+          </div>
+          {/* Tagline text */}
+          <div>
+            <div className="text-[#2DD4BF] text-xs font-semibold tracking-[0.2em] uppercase mb-2" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
+              Lumiel Design Clarity
+            </div>
+            <div
+              className="text-white font-bold leading-tight"
+              style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: "clamp(1.4rem, 3vw, 2.2rem)", letterSpacing: "-0.02em" }}
+            >
+              Illuminate information.<br />Empower decisions.
+            </div>
+          </div>
         </div>
       </section>
 
