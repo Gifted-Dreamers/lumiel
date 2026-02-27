@@ -49,7 +49,7 @@ export default function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...formData,
-          source: "thecommoncloud.cc",
+          source: "thecommoncloud.org",
           timestamp: new Date().toISOString(),
         }),
       });
@@ -146,7 +146,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-xs font-semibold text-[oklch(0.18_0.04_245)] uppercase tracking-wider mb-1">Project</div>
-                    <div className="text-slate-600 text-sm">thecommoncloud.cc</div>
+                    <div className="text-slate-600 text-sm">thecommoncloud.org</div>
                     <div className="text-slate-500 text-xs mt-0.5">by Lumiel Design Clarity</div>
                   </div>
                 </div>

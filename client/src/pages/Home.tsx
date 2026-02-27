@@ -268,7 +268,7 @@ export default function Home() {
                   { label: "License", value: "MIT Open Source" },
                   { label: "Status", value: "Early Development" },
                   { label: "Sponsor", value: "Gifted Dreamers 501(c)(3)" },
-                  { label: "Domain", value: "thecommoncloud.cc" },
+                  { label: "Domain", value: "thecommoncloud.org" },
                 ].map((stat) => (
                   <div key={stat.label} className="bg-[oklch(0.22_0.04_245)] p-4 rounded-lg border border-[oklch(0.72_0.15_210/0.2)]">
                     <div className="text-[oklch(0.72_0.15_210)] text-xs font-medium uppercase tracking-wider mb-1">{stat.label}</div>
