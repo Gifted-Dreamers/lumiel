@@ -60,14 +60,9 @@ export default function Navigation() {
                 loading="eager"
               />
             </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-white font-semibold text-sm tracking-tight">
-                Lumiel Design Clarity
-              </span>
-              <span className="text-[oklch(0.72_0.15_210)] text-[10px] font-medium tracking-widest uppercase">
-                A Common Cloud Project
-              </span>
-            </div>
+            <span className="text-white font-semibold text-sm tracking-tight">
+              Lumiel Design Clarity
+            </span>
           </Link>
 
           {/* Desktop Nav */}
