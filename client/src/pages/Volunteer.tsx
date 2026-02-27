@@ -221,7 +221,7 @@ function VolunteerForm() {
       setForm({ firstName: "", lastName: "", email: "", company: "", skills: [], message: "" });
     } catch {
       setStatus("error");
-      setErrorMsg("There was an error submitting your application. Please try again or email volunteer@gifteddreamers.org");
+      setErrorMsg("There was an error submitting your application. Please try again or email katherine@gifteddreamers.org");
     } finally {
       setLoading(false);
     }
