@@ -66,11 +66,14 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              <img
-                src={ABOUT_IMG}
-                alt="Collaborative team working on civic technology"
+              <video
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/mission-video_3d4eb8f7.mp4"
                 className="rounded-xl shadow-xl w-full object-cover"
-                loading="lazy"
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label="Collaborative team working on civic technology"
               />
             </div>
           </div>
