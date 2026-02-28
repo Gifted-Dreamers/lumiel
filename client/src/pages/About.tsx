@@ -276,8 +276,8 @@ export default function About() {
             </div>
             <div>
               <img
-                src={TEAM_IMG}
-                alt="Diverse team collaborating remotely"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/volunteer-banner_26e977e3.jpg"
+                alt="Community members collaborating remotely on devices"
                 className="rounded-xl shadow-xl w-full object-cover"
                 loading="lazy"
               />
