@@ -205,13 +205,17 @@ export default function Home() {
             })}
           </div>
 
-          {/* Platform image */}
+          {/* Platform video */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src={LIGHTBULB_IMG}
-              alt="Collaborative decision-making with AI-powered tools"
+            <video
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/early-dev-video_e230d344.mp4"
+              poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/early-dev-poster_c702be41.jpg"
               className="w-full h-64 md:h-80 object-cover"
-              loading="lazy"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-label="Abstract light trails representing innovation and early development"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.18_0.04_245/0.85)] to-transparent flex items-center">
               <div className="p-8 md:p-12 max-w-lg">
