@@ -159,8 +159,8 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-4 bg-[oklch(0.72_0.15_210/0.05)] rounded-2xl" />
               <video
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/decision-gap-video_721445b2.mp4"
-                poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/decision-gap-poster_24e9a265.jpg"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/mission-video_3d4eb8f7.mp4"
+                poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/mission-poster_b35125c1.jpg"
                 className="relative rounded-xl shadow-2xl w-full object-cover"
                 autoPlay
                 muted
