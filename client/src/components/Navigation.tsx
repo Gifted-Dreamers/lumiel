@@ -16,7 +16,7 @@ const NAV_LINKS = [
 ];
 
 // Official high-res Lumiel logo (icon portion)
-const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/logo-opt_562a44c6.webp";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

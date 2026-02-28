@@ -8,8 +8,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const ABOUT_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/MmaeHuQvvUQsyQPw.jpg";
-const TEAM_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/tNjQfXaudiylFOde.png";
-const LUMIEL_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png";
+const TEAM_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/team-opt_285e464c.webp";
+const LUMIEL_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/logo-opt_562a44c6.webp";
 const LUMIEL_BANNER = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/HVnEtFXsiVNIBozT.png";
 
 export default function About() {
@@ -37,7 +37,7 @@ export default function About() {
             <div className="hidden md:flex flex-col items-center justify-center flex-shrink-0">
               <div className="w-32 h-32 rounded-xl overflow-hidden bg-white shadow-xl flex items-center justify-center p-2">
                 <img
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/logo-opt_562a44c6.webp"
                   alt="Lumiel Design Clarity"
                   className="w-full h-full object-contain"
                   loading="eager"

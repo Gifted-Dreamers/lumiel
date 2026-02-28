@@ -11,9 +11,9 @@ import Footer from "@/components/Footer";
 const HERO_BG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/RRHnEBttbNXsGgbz.jpg";
 const ABOUT_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/MmaeHuQvvUQsyQPw.jpg";
 const PLATFORM_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/pwJFHTxcbSvSDVij.jpg";
-const TEAM_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/tNjQfXaudiylFOde.png";
-const LIGHTBULB_IMG = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/RXqmHgflWdQrBoPy.png";
-const LUMIEL_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663235442573/wEarmuqgeCMZIkNN.png";
+const TEAM_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/team-opt_285e464c.webp";
+const LIGHTBULB_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/lightbulb-opt_77cd524e.webp";
+const LUMIEL_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/logo-opt_562a44c6.webp";
 
 const FEATURES = [
   {
