@@ -158,11 +158,15 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-[oklch(0.72_0.15_210/0.05)] rounded-2xl" />
-              <img
-                src={TEAM_IMG}
-                alt="Diverse team collaborating on decision support tools"
+              <video
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/decision-gap-video_721445b2.mp4"
+                poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/decision-gap-poster_24e9a265.jpg"
                 className="relative rounded-xl shadow-2xl w-full object-cover"
-                loading="lazy"
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label="Human and AI hands holding a tablet with digital intelligence network"
               />
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -left-6 bg-[oklch(0.18_0.04_245)] text-white p-4 rounded-xl shadow-xl border border-[oklch(0.72_0.15_210/0.3)]">
