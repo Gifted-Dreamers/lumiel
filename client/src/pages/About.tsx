@@ -19,11 +19,11 @@ export default function About() {
 
       {/* Page Header */}
       <section className="pt-28 pb-16 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `radial-gradient(circle at 70% 50%, oklch(0.72 0.15 210 / 0.4) 0%, transparent 60%)`,
-          }}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/about-hero-bg-4dKg8o2dK9mw85xwtT56XS.webp)` }}
         />
+        <div className="absolute inset-0 bg-[oklch(0.18_0.04_245/0.70)]" />
         <div className="container relative z-10">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
