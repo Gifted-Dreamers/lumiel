@@ -16,7 +16,7 @@ const FAQ_CATEGORIES = [
     questions: [
       {
         q: "What is Lumiel Design Clarity?",
-        a: "Lumiel Design Clarity is an open-source civic technology organization building The Common Cloud — a platform that combines structured analytical methods, including evidence grading, probabilistic reasoning, and causal inference, with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
+        a: "Lumiel Design Clarity is an open-source civic technology platform that combines structured analytical methods — including evidence grading, probabilistic reasoning, and causal inference — with conversational AI to help users navigate complex, high-stakes decisions with greater transparency and confidence.",
       },
       {
         q: "Who is this platform for?",
