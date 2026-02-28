@@ -68,6 +68,7 @@ export default function About() {
             <div className="relative">
               <video
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/mission-video_3d4eb8f7.mp4"
+                poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/mission-poster_b35125c1.jpg"
                 className="rounded-xl shadow-xl w-full object-cover"
                 autoPlay
                 muted
