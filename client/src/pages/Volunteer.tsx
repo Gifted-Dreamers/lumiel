@@ -394,8 +394,15 @@ export default function Volunteer() {
               </div>
             </div>
             <div>
-              <img src={TEAM_IMG} alt="Volunteers collaborating on the project"
-                className="rounded-xl shadow-xl w-full object-cover" loading="lazy" />
+              <video
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/volunteer-video_dcc4cd72.mp4"
+                poster="https://d2xsxph8kpxj0f.cloudfront.net/310519663235442573/NRqzMbZCkFgJSaZmsJS4BR/volunteer-poster_a0d5f331.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="rounded-xl shadow-xl w-full object-cover"
+              />
             </div>
           </div>
         </div>
