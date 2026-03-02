@@ -192,17 +192,60 @@ export default function About() {
             </div>
           </div>
 
-          {/* Technical Advisors */}
+          {/* Technical Team */}
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <div className="accent-bar mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-[oklch(0.18_0.04_245)] mb-2 tracking-tight">Technical Advisors</h3>
+              <h3 className="text-2xl font-bold text-[oklch(0.18_0.04_245)] mb-2 tracking-tight">Technical Team</h3>
               <p className="text-slate-500 max-w-xl mx-auto font-serif text-sm">
-                Researchers and practitioners who bring deep expertise in data science and machine learning to guide the platform's development.
+                Engineers and researchers who bring deep expertise in machine learning, data science, and AI to build and guide the platform.
               </p>
             </div>
 
-            <div className="max-w-xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {/* Timur Kabulov */}
+              <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                <div className="bg-navy p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-full bg-[oklch(0.72_0.15_210/0.2)] border-2 border-[oklch(0.72_0.15_210)] flex items-center justify-center flex-shrink-0">
+                      <span className="text-[oklch(0.72_0.15_210)] text-lg font-bold">TK</span>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-xl font-bold text-white mb-0.5">Timur Kabulov</h4>
+                      <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">ML/Decision Engine Engineer</p>
+                      <div className="flex flex-wrap gap-2 text-xs text-slate-400">
+                        <span className="flex items-center gap-1"><MapPin size={11} />Minsk, Belarus</span>
+                        <span className="flex items-center gap-1"><GraduationCap size={11} />Belarusian State University</span>
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/ta8kimur"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-[oklch(0.72_0.15_210)] text-[oklch(0.12_0.04_245)] text-xs font-semibold rounded hover:bg-[oklch(0.80_0.13_210)] transition-colors flex-shrink-0"
+                    >
+                      <Linkedin size={12} />
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+                <div className="p-6 flex-1">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                    Timur is a machine learning engineer with practical experience applying advanced deep learning and statistical methods to real-world problems. He specializes in computer vision, image segmentation, and object detection, with research experience spanning biomedical imaging and bioinformatics.
+                  </p>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-5">
+                    Currently completing a Bachelor's degree in Bioengineering and Bioinformatics at Belarusian State University (GPA 9.5/10), Timur brings hands-on experience training deep learning models for industrial and scientific applications to Lumiel's decision engine infrastructure.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {["Deep Learning", "Computer Vision", "PyTorch", "Python", "Bioinformatics"].map((tag) => (
+                      <span key={tag} className="px-2.5 py-1 bg-[oklch(0.72_0.15_210/0.1)] text-[oklch(0.40_0.12_210)] text-xs font-medium rounded-full border border-[oklch(0.72_0.15_210/0.2)]">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               {/* Daniele Didino */}
               <div className="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm flex flex-col">
                 <div className="bg-navy p-6">
