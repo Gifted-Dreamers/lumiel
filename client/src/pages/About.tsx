@@ -215,7 +215,6 @@ export default function About() {
                       <p className="text-[oklch(0.72_0.15_210)] text-sm font-medium mb-1">ML/Decision Engine Engineer</p>
                       <div className="flex flex-wrap gap-2 text-xs text-slate-400">
                         <span className="flex items-center gap-1"><MapPin size={11} />Minsk, Belarus</span>
-                        <span className="flex items-center gap-1"><GraduationCap size={11} />Belarusian State University</span>
                       </div>
                     </div>
                     <a
